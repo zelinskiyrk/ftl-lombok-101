@@ -3,6 +3,7 @@ package com.zelinskiyrk.maven.console;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.PersonService;
+import com.zelinskiyrk.maven.service.Task002;
 
 public class App {
     private static PersonService personService = new PersonService();
@@ -18,5 +19,8 @@ public class App {
 
         Person afterParse = personService.parse(json);
         System.out.println(afterParse);
+        
+        System.out.println(new Task002.ValExample().example());
+        Task002.example2();
     }
 }
