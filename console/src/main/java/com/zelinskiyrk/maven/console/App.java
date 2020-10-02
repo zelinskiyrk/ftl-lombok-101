@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.PersonService;
 import com.zelinskiyrk.maven.service.Task002;
+import com.zelinskiyrk.maven.service.Task003;
 
 public class App {
     private static PersonService personService = new PersonService();
@@ -22,5 +23,9 @@ public class App {
         
         System.out.println(new Task002.ValExample().example());
         Task002.example2();
+
+        System.out.println("-------= Task 3 =-------");
+        System.out.println(new Task003.ValExample().example());
+
     }
 }
