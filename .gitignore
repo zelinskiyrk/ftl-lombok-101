@@ -21,3 +21,17 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+.idea/.gitignore
+.idea/.name
+.idea/compiler.xml
+.idea/encodings.xml
+.idea/ftl-lombok-101.iml
+.idea/jarRepositories.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_11_2.xml
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_11_2.xml
+.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_11_2.xml
+.idea/libraries/Maven__junit_junit_3_8_1.xml
+.idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml
