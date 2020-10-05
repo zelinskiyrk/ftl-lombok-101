@@ -5,6 +5,7 @@ import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.PersonService;
 import com.zelinskiyrk.maven.service.Task002;
 import com.zelinskiyrk.maven.service.Task003;
+import com.zelinskiyrk.maven.service.Task004;
 
 public class App {
     private static PersonService personService = new PersonService();
@@ -26,6 +27,9 @@ public class App {
 
         System.out.println("-------= Task 3 =-------");
         System.out.println(new Task003.ValExample().example());
+
+        System.out.println("-------= Task 4 =-------");
+        System.out.println(new Task004.NonNullExample(person));
 
     }
 }
