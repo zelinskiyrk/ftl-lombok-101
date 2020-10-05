@@ -8,6 +8,14 @@ import lombok.Setter;
 public class Person {
     private String firstName;
     private String lastName;
+    private String name;
+
+    public Person() {
+    }
+
+    public Person(String name) {
+        this.name = name;
+    }
 
     @Override
     public String toString() {
