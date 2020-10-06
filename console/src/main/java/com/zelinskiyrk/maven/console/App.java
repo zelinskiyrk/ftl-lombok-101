@@ -2,15 +2,14 @@ package com.zelinskiyrk.maven.console;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
-import com.zelinskiyrk.maven.service.PersonService;
-import com.zelinskiyrk.maven.service.Task002;
-import com.zelinskiyrk.maven.service.Task003;
-import com.zelinskiyrk.maven.service.Task004;
+import com.zelinskiyrk.maven.service.*;
+
+import java.io.IOException;
 
 public class App {
     private static PersonService personService = new PersonService();
 
-    public static void main(String args[]) throws JsonProcessingException {
+    public static void main(String args[]) throws IOException {
         Person person = new Person();
         person.setLastName("Smith");
         person.setFirstName("Jon");
@@ -30,6 +29,9 @@ public class App {
 
         System.out.println("-------= Task 4 =-------");
         System.out.println(new Task004.NonNullExample(person));
+
+        System.out.println("-------= Task 5 =-------");
+        Task005.CleanupExample.run();
 
     }
 }
