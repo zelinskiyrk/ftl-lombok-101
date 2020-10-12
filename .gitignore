@@ -36,3 +36,4 @@ hs_err_pid*
 .idea/libraries/Maven__junit_junit_3_8_1.xml
 .idea/libraries/Maven__org_projectlombok_lombok_1_18_12.xml
 *.iml
+.idea/workspace.xml
