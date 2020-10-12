@@ -3,6 +3,7 @@ package com.zelinskiyrk.maven.console;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.*;
+import com.zelinskiyrk.maven.service.task007.Task007;
 
 import java.io.IOException;
 
@@ -38,6 +39,11 @@ public class App {
         System.out.println(gSExample.getAge());
         gSExample.setName("Vasiliy");
         System.out.println(gSExample);
+
+        System.out.println("-------= Task 7 =-------");
+        System.out.println(new Task007.ToStringExample().getName());
+
+
 
     }
 }
