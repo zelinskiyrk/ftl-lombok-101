@@ -43,7 +43,17 @@ public class App {
         System.out.println("-------= Task 7 =-------");
         System.out.println(new Task007.ToStringExample().getName());
 
-
+        System.out.println("-------= Task 8 =-------");
+        EqualsAndHashCodeExample a = new EqualsAndHashCodeExample();
+        EqualsAndHashCodeExample b = new EqualsAndHashCodeExample();
+        System.out.println(a.equals(b));
+        System.out.println(a.hashCode() == b.hashCode());
+        b.setName("Igor");
+        System.out.println(a.equals(b));
+        System.out.println(a.hashCode() == b.hashCode());
+        a.setName("Igor");
+        System.out.println(a.equals(b));
+        System.out.println(a.hashCode() == b.hashCode());
 
     }
 }
