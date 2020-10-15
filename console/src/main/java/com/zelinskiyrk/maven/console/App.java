@@ -4,6 +4,7 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.*;
 import com.zelinskiyrk.maven.service.task007.Task007;
+import com.zelinskiyrk.maven.service.task012.MyBuilder;
 
 import java.io.IOException;
 
@@ -72,5 +73,9 @@ public class App {
         String[] massive = {"one", "two", "three"};
         Task011 task011 = new Task011("user", 28, 4.9, massive);
         System.out.println(task011.toString());
+
+        System.out.println("-------= Task 12 =-------");
+//        Task012 task012 = new Task012().builder().age(34).name("Roman").occupation("FTL");
+        MyBuilder.run();
     }
 }
