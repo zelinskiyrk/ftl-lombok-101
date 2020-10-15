@@ -67,5 +67,10 @@ public class App {
         dataAnnotation.setScore(4.9);
         System.out.println(dataAnnotation.toString());
         System.out.println(dataAnnotation.getName());
+
+        System.out.println("-------= Task 11 =-------");
+        String[] massive = {"one", "two", "three"};
+        Task011 task011 = new Task011("user", 28, 4.9, massive);
+        System.out.println(task011.toString());
     }
 }
