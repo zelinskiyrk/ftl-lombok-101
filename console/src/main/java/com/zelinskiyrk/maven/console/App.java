@@ -55,5 +55,10 @@ public class App {
         System.out.println(a.equals(b));
         System.out.println(a.hashCode() == b.hashCode());
 
+        System.out.println("-------= Task 9 =-------");
+        Task009 example1 = new Task009(2, 8,"example1");
+        Task009.NoArgsExample c = new Task009.NoArgsExample();
+        System.out.println(example1.toString());
+        System.out.println(c.toString());
     }
 }
