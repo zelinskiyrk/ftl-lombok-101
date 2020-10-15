@@ -60,5 +60,12 @@ public class App {
         Task009.NoArgsExample c = new Task009.NoArgsExample();
         System.out.println(example1.toString());
         System.out.println(c.toString());
+
+        System.out.println("-------= Task 10 =-------");
+        Task010 dataAnnotation = new Task010("noName");
+        System.out.println(dataAnnotation.toString());
+        dataAnnotation.setScore(4.9);
+        System.out.println(dataAnnotation.toString());
+        System.out.println(dataAnnotation.getName());
     }
 }
