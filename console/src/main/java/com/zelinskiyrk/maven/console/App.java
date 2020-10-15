@@ -1,17 +1,18 @@
 package com.zelinskiyrk.maven.console;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.zelinskiyrk.maven.core.Person;
 import com.zelinskiyrk.maven.service.*;
 import com.zelinskiyrk.maven.service.task007.Task007;
 import com.zelinskiyrk.maven.service.task012.MyBuilder;
+import com.zelinskiyrk.maven.service.task013.Task013;
+import com.zelinskiyrk.maven.service.task013.ThreadLombok;
 
 import java.io.IOException;
 
 public class App {
     private static PersonService personService = new PersonService();
 
-    public static void main(String args[]) throws IOException {
+    public static void main(String args[]) throws IOException, InterruptedException {
         Person person = new Person();
         person.setLastName("Smith");
         person.setFirstName("Jon");
@@ -77,5 +78,9 @@ public class App {
         System.out.println("-------= Task 12 =-------");
 //        Task012 task012 = new Task012().builder().age(34).name("Roman").occupation("FTL");
         MyBuilder.run();
+
+        System.out.println("-------= Task 13 =-------");
+        ThreadLombok.run();
+        Task013.hello();
     }
 }
