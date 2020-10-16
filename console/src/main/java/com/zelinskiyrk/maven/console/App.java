@@ -6,6 +6,7 @@ import com.zelinskiyrk.maven.service.task007.Task007;
 import com.zelinskiyrk.maven.service.task012.MyBuilder;
 import com.zelinskiyrk.maven.service.task013.Task013;
 import com.zelinskiyrk.maven.service.task013.ThreadLombok;
+import com.zelinskiyrk.maven.service.task014.WithExample;
 
 import java.io.IOException;
 
@@ -82,5 +83,8 @@ public class App {
         System.out.println("-------= Task 13 =-------");
         ThreadLombok.run();
         Task013.hello();
+
+        System.out.println("-------= Task 13 =-------");
+        WithExample.run();
     }
 }
