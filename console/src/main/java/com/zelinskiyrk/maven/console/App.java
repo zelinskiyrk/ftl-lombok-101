@@ -7,6 +7,7 @@ import com.zelinskiyrk.maven.service.task012.MyBuilder;
 import com.zelinskiyrk.maven.service.task013.Task013;
 import com.zelinskiyrk.maven.service.task013.ThreadLombok;
 import com.zelinskiyrk.maven.service.task014.WithExample;
+import com.zelinskiyrk.maven.service.task015.GetterLazy;
 
 import java.io.IOException;
 
@@ -86,5 +87,8 @@ public class App {
 
         System.out.println("-------= Task 13 =-------");
         WithExample.run();
+
+        System.out.println("-------= Task 15 =-------");
+        GetterLazy.run();
     }
 }
